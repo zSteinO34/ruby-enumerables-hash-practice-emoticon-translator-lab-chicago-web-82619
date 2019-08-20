@@ -16,9 +16,11 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   hash = load_library(file_path)
-  
-  
-  binding.pry
+  if hash["get_emoticon"].includes(emoticon)
+    puts hash["get_emoticon"][emoticon]
+  else
+    puts "Sorry!"
+  end
 end
 
 def get_english_meaning
