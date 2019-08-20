@@ -22,6 +22,7 @@ def get_japanese_emoticon(file_path, emoticon)
   else
     puts "Sorry!"
   end
+  result
 end
 
 def get_english_meaning
